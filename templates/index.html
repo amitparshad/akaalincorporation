@@ -84,12 +84,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
+
+	<!original>
 	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		<span class="fa fa-chevron-left" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 		<span class="sr-only">Previous</span>
 	</a>
 	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		<span class="fa fa-chevron-right" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
 	<!-- The Modal -->
@@ -646,20 +648,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //bootstrap-modal-pop-up -->
 
 	<!-- js -->
-	<script type="text/javascript" src="{% static "js/jquery-2.1.4.min.js"  %}"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
 
-	<script type="text/javascript" src="{% static "js/bootstrap-3.1.1.min.js"  %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap-3.1.1.min.js' %}"></script>
 
 	<!-- stats -->
-	<script src="{% static "js/jquery.waypoints.min.js"  %}"></script>
-	<script src="{% static "js/jquery.countup.js"  %}"></script>
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'js/jquery.countup.js' %}"></script>
 	<script>
 		$('.counter').countUp();
 	</script>
 	<!-- //stats -->
 
 	<!-- owl carousel -->
-	<script src="{% static "js/owl.carousel.js"  %}"></script>
+	<script src="{% static 'js/owl.carousel.js' %}"></script>
 	<script>
 		$(document).ready(function () {
 			$("#owl-demo").owlCarousel({
@@ -676,7 +681,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //owl carousel -->
 
 	<!-- Responsive slider  -->
-	<script src="{% static "js/responsiveslides.min.js"  %}"></script>
+	<script src="{% static 'js/responsiveslides.min.js' %}"></script>
 	<script>
 		$(function () {
 			$("#slider4").responsiveSlides({
@@ -697,7 +702,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Responsive slider  -->
 
 	<!-- Flex slider-script -->
-	<script defer src="{% static "js/jquery.flexslider.js"  %}"></script>
+	<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
 		<script type="text/javascript">
 
 		$(window).load(function(){
@@ -712,8 +717,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Flex slider-script -->
 
 	<!-- start-smooth-scrolling -->
-	<script src="{% static "js/move-top.js"  %}"></script>
-	<script src="{% static "js/easing.js"  %}"></script>
+	<script src="{% static 'js/move-top.js' %}"></script>
+	<script src="{% static 'js/easing.js' %}"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -749,6 +754,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- smooth scrolling js -->
-	<script src="{% static "js/SmoothScroll.min.js"  %}"></script>
+	<script src="{% static 'js/SmoothScroll.min.js' %}"></script>
 	<!-- //smooth scrolling js -->
 {% endblock body %}
