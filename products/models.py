@@ -4,7 +4,7 @@ from django.db import models
 class add_product(models.Model):
     name = models.CharField(max_length=100)
     detail=models.TextField()
-    linkpdf =  models.TextField(blank=True)
+    pdf_file =  models.FileField(upload_to='pdfs/', null=True, blank=True)
     image=models.FileField(null=True,blank=True,upload_to="static/pythimages")
     def __str__(self):
         return self.name
