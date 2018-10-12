@@ -41,14 +41,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 			<ul class="portfolio-area">
+        {%   for product in products  %}
 
 				<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
 				<div class=" service_grid1">
 					<span class="image-block">
 					<figure>
-					<img src="{% static "images/serv1.jpg" %}" alt="service1" />
+					{# <img src="{% static "images/serv1.jpg" %}" alt="service1" /> #}
+
+          <img src="../{{ product.image }}" alt="service1" />
 					<figcaption>
-						<h3>Corporation</h3>
+						<h3>{{ product.name }}</h3>
 					</figcaption>
 					</figure>
 					</span>
@@ -56,8 +59,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</li>
 					<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
 				<div class="service_grid2">
-					<h3>Business Strategy</h3>
-					<p>Nulla facilisi. Proin vel commodo leo. Ut mauris tortor, cursus ut massa vitae, iaculis vehicula turpis. Nam libero tempor.</p>
+					<h3>{{ product.name }}y</h3>
+					<p>{{  product.detail}}</p>
 
 					<div class="read">
 						<a class="read" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -70,15 +73,7 @@ Read more »</a>
 				<div class="collapse" id="collapseExample">
 
                 <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
-					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. N
+            {{  product.detail}}
                  <a class="read" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
 Read more »</a>
                 </div>
@@ -106,6 +101,7 @@ Read more »</a>
 
 				</li>
 
+{%   endfor %}
 
 
 
@@ -117,8 +113,7 @@ Read more »</a>
 
 
 
-
-
+{#
 
 
 				<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
@@ -197,7 +192,12 @@ Read more »</a>
 			</ul>
 			<!--end portfolio-area -->
 		</div>
-	</div>
+	</div> #}
+
+
+
+
+
 <!-- //Portfolio -->
 
 
